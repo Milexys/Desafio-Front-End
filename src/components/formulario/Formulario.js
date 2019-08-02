@@ -22,7 +22,7 @@ const Formulario = props => {
                 </div>
                 <div className="form-result">
                     <h2>Resultado:</h2>
-                    {props.validation !== '' ? <p>En numero {props.validation} es un número {props.result ? 'Impar' : 'Par'}</p> : 'No ha ingresado un número' }
+                    {props.validation !== '' ? <p>El número {props.validation} es {props.result ? 'Impar' : 'Par'}</p> : 'No ha ingresado un número' }
                     
                 </div>
             </div>
