@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Formulario.css';
 
-class Formulario extends Component {
-    render(){
+const Formulario = (props) => {
         return(
             <div className="form-box">
                 <div className="form-header">
@@ -18,7 +17,6 @@ class Formulario extends Component {
                 </div>
             </div>
         )
-    }
 }
 
 export default Formulario;
