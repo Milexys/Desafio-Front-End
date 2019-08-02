@@ -1,0 +1,15 @@
+.form-box{
+    width: 40%;
+    border: 1px solid #5174e6;
+    border-radius: 10px;
+}
+.form-header{
+    width: 100%;
+    height: auto;
+    background-color: #5174e6;
+    color: white;
+    border: 1px solid #5174e6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: left;
+}
