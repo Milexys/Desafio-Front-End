@@ -3,7 +3,7 @@ import { SAVE_VALIDATION, CALCULATE } from './actions';
 import { saveValidation, calculate } from './reducer';
 
 const reducer = (state, action) => {
-    switch (action.type){
+    switch (action.type){ //dependiendo de cada caso realiza la accion
         case SAVE_VALIDATION:
             return saveValidation(state, action);
         case CALCULATE:
@@ -14,7 +14,7 @@ const reducer = (state, action) => {
 }
 
 const initialState = {
-    validation: [],
+    validation: '',
     result: 0
 }
 

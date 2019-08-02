@@ -1,6 +1,6 @@
 export const saveValidation = (state, action) => ({
-...state,
-validation: state.validation.concat(action.validation),
+...state, //copia el estado anterior
+validation: action.validation, //recie el nuevo estado
 })
 
 export const calculate = (state, action) => ({
