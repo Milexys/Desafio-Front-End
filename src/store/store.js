@@ -1,11 +1,13 @@
 import { createStore } from 'redux';
-import { MAKE_VALIDATION } from './actions';
-import { makeValidation } from './reducer';
+import { SAVE_VALIDATION, CALCULATE } from './actions';
+import { saveValidation, calculate } from './reducer';
 
 const reducer = (state, action) => {
     switch (action.type){
-        case MAKE_VALIDATION:
-            return makeValidation(state, action);
+        case SAVE_VALIDATION:
+            return saveValidation(state, action);
+        case CALCULATE:
+            return calculate(state, action);
             default:
                 return state;
     }
@@ -13,6 +15,7 @@ const reducer = (state, action) => {
 
 const initialState = {
     validation: [],
+    result: 0
 }
 
 export default createStore(reducer, initialState);

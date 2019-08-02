@@ -1,1 +1,2 @@
-export const  MAKE_VALIDATION = 'MAKE_VALIDATION';
+export const  SAVE_VALIDATION = 'MAKE_VALIDATION';
+export const  CALCULATE = 'CALCULATE';
